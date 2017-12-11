@@ -1,0 +1,108 @@
+/* ESTILOS DEL MENU */
+#menu-bar{
+    display: none;
+}
+
+header i{
+    float: right;
+    font-size: 28px;
+    margin: 6px 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.856);
+    transition: all 0.5s;
+    transform: translateX(-100%)
+}
+
+.menu a{
+    display: block;
+    color: white;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.829);
+}
+
+.menu a:hover{
+    background: rgba(255, 255, 255, 0.363);
+}
+
+#menu-bar:checked ~ .menu{
+    transform: translateX(0%);
+}
+/* TERMINÓ ESTILOS DEL MENÚ */
+/* ESTILOS DEL BANNER */
+.banner{
+    margin-top: 50px;
+    position: relative;
+}
+
+.flowers img{
+    width: 100%;
+    height: 300px;
+}
+
+.banner .container{
+    position: absolute;
+    top:  50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white;
+}
+/* TERMINÓ ESTILOS DEL BANNER */
+
+/* ESTILOS DE LOS ARTICLE */
+.two-section{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.two-section article{
+    margin: 15px;
+    max-width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.856);
+    border-radius: 10px;
+}
+
+.two-section article figure img{
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    border-radius: 10px 10px 0 0;
+}
+
+.two-section article h3, p{
+    padding: 10px;
+}
+
+.two-section article button{
+    margin: 10px;
+}
+
+.two-section article div{
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+button{
+    color: white;
+    background: black;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+button:hover{
+    background: white;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}

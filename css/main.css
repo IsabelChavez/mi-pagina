@@ -1,5 +1,34 @@
 *{
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background: rgb(14, 13, 13);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container{
+    width: 98%;
+    margin: auto;
+}
+.container h1{
+    float: left;
+}
+
+header .container{
+    display: table;
+}
+
+section{
+    width: 100%;
+    margin-bottom: 25px;
 }
